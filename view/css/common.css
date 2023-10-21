@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+    scroll-behavior: smooth;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+section:not(.banner-section) {
+    padding: 40px 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/*******btn-animation***********/
+.stay-btn {
+    font-size: 15px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    background: #215473;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+.stay-btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #262B2E;
+    transform: translateX(-100%);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.stay-btn:hover {
+    color: #e6d2d2;
+}
+
+.stay-btn:hover:before {
+    transform: translateX(0);
+}
+
+.stay-head {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.stay-head span {
+    color: #215473;
+}
+
+.stay-info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+
+.box-scroll {
+    scrollbar-color: #0D2242 #80808030;
+    scrollbar-width: thin !important;
+    overflow: auto;
+}
+
+.box-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 50px;
+}
+
+.box-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 10px;
+}
+
+.box-scroll::-webkit-scrollbar-thumb {
+    background: #0D2242;
+    border-radius: 10px;
+}
+
+.box-scroll::-webkit-scrollbar-thumb:hover {
+    background: #0D2242;
+}
+
+.box-scroll::-webkit-scrollbar-button {
+    height: auto;
+}
+
+.common-modal .modal-body form .form-control {
+    width: 100%;
+    height: 55px;
+    background: #F7F7F7;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+}
+
+.common-modal .modal-body form .form-control:focus {
+    border: 1px solid #0D2242;
+    box-shadow: none;
+}
+
+.common-modal .modal-footer .stay-btn {
+    width: 110px;
+    background: #0D2242;
+}
+
+.common-modal .modal-footer .stay-btn.out-line {
+    background: transparent;
+    border: 1px solid #0D2242;
+}
+
+.login-box {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #b9b9b9;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-box:has(input:checked) {
+    border: 1.5px solid #215473;
+
+}
+
+.login-box input:checked~span {
+    color: #215473;
+    font-weight: 600;
+}
+
+.login-box input:checked~img {
+    filter: brightness(0) saturate(100%) invert(27%) sepia(11%) saturate(2879%) hue-rotate(159deg) brightness(100%) contrast(90%);
+}
+
+@media screen and (max-width:991px) {
+    .stay-head {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .stay-info {
+        font-size: 14px;
+    }
+
+}

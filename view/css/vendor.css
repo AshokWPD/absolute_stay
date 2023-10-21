@@ -1,0 +1,128 @@
+/*******vendor-modal*******/
+
+.vendor-modal .modal-dialog {
+    max-width: 800px;
+}
+
+.vendor-modal .modal-content {
+
+    background: linear-gradient(170deg, #D0F5FF -14.42%, #EFFCFF 30.57%, #F7FDFF 66.09%, #FFFFFF 99.24%);
+    border-radius: 15px;
+    position: relative;
+}
+
+.vendor-modal .modal-content::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 130px;
+    background: url(../images/stars.png) no-repeat;
+    background-size: contain;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vendor-modal .modal-body {
+    padding-top: 8%;
+}
+
+.vendor-modal .modal-body .stay-info {
+    width: 60%;
+    margin: 0 auto 30px;
+    color: #525252;
+    line-height: 26px;
+}
+
+.vendor-modal .modal-body form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vendor-modal .modal-body .form-input label {
+    color: #525252;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.vendor-modal .modal-body .form-input .form-control,
+.vendor-modal .modal-body .form-input .form-select {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 0.5px solid #9F9F9F;
+    padding: 5px 0 5px;
+    font-size: 14px;
+    color: #0e0e0e;
+    font-weight: 600;
+}
+
+.vendor-modal .modal-body .form-input .form-control::placeholder,
+.vendor-modal .modal-body .form-input .form-select::placeholder {
+    color: #25252550;
+}
+
+.vendor-modal .modal-body .form-input .form-select {
+    background: url(../images/icons/arrow-down.png) no-repeat;
+    background-position: 98% 50%;
+}
+
+.vendor-modal .modal-body .form-input .stay-btn {
+    width: 100%;
+    height: 50px;
+}
+
+.vendor-modal .modal-body .form-input .confirm-btn,
+.vendor-modal .modal-body .form-input .pass-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background: transparent;
+}
+
+/*****/
+
+.otp-modal .otp-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vendor-modal.otp-modal .modal-body .form-input .otp-input .form-control {
+    width: 78px;
+    height: 78px;
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    background: #F4FCFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 5px;
+}
+
+.otp-modal .resend-otp {
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    color: #215473;
+    margin: 30px auto;
+    display: block;
+}
+
+@media only screen and (max-width: 991px) {
+
+    .vendor-modal .modal-dialog {
+        max-width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 567px) {
+
+    .vendor-modal .modal-body .stay-info,
+    .vendor-modal .modal-body form {
+        width: 95%;
+    }
+}

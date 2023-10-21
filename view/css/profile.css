@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #215473;
+}
+
+.container-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.profile-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+.profile-gif {
+    max-width: 100%;
+}
+
+.card-title {
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.stay-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.stay-btn:hover {
+    background-color: #215473;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .container-profile {
+        justify-content: center; /* Center align in desktop view */
+
+        padding: 10px;
+    }
+
+    .profile-container {
+        width: max-content;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .container-profile {
+        justify-content: center; /* Center align in desktop view */
+    }
+
+    .profile-container {
+        width: 500px;
+    }
+}

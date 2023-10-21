@@ -1,0 +1,100 @@
+.contact-img {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+}
+
+.contact-img .contact-us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contact-details li {
+    color: #C9C9C9;
+    margin-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    padding: 40px 30px;
+    border-radius: 0 15px 15px 0;
+    background: linear-gradient(180deg, rgba(34, 76, 125, 0.04) 0%, rgba(33, 84, 115, 0) 100%), #FFFFFF;
+}
+
+.contact .form-input label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.contact .form-input .form-control {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 0.5px solid #9F9F9F;
+    padding: 5px 0 5px;
+    font-size: 14px;
+    color: #0e0e0e;
+    font-weight: 600;
+}
+
+.contact .form-input .form-control:focus {
+    border-bottom: 0.5px solid #215473;
+}
+
+.contact .form-input .stay-btn {
+    width: 100%;
+    height: 50px;
+}
+
+
+/*******/
+.where-section {
+    margin-bottom: 100px;
+}
+
+.where {
+    width: 100%;
+    height: 510px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.where iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-img {
+        height: auto;
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .contact {
+        margin: 0;
+        height: auto;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .where-section {
+        margin-bottom: 50px;
+    }
+
+}

@@ -1,0 +1,156 @@
+   /* Original styles */
+   .contact-img {
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+}
+
+.contact-img .contact-us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contact-details li {
+    color: #C9C9C9;
+    margin-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    padding: 40px 30px;
+    border-radius: 0 15px 15px 0;
+    background: linear-gradient(180deg, rgba(34, 76, 125, 0.04) 0%, rgba(33, 84, 115, 0) 100%), #FFFFFF;
+}
+
+.contact .form-input label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.contact .form-input .form-control {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 0.5px solid #9F9F9F;
+    padding: 5px 0 5px;
+    font-size: 14px;
+    color: #0e0e0e;
+    font-weight: 600;
+}
+
+.contact .form-input .form-control:focus {
+    border-bottom: 0.5px solid #215473;
+}
+
+.contact .form-input .stay-btn {
+    width: 100%;
+    height: 50px;
+    color:#FFFFFF;
+
+}
+
+
+.image-upload-container {
+    text-align: center;
+    margin-top: 20px;
+    color:#FFFFFF;
+
+  }
+
+  .image-upload-label {
+    display: block;
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+    color:#FFFFFF;
+  }
+
+  .image-upload-input {
+    display: none;
+    font-size: 20px;
+    color:#FFFFFF;
+
+  }
+
+  .upload-image{
+    color: #FFFFFF;
+    font-size: 20px;
+
+  }
+
+  .image-upload-button {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #215473; /* Background color of the button */
+    color: white; /* Text color of the button */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+
+  .image-upload-button:hover {
+    background-color: #184056; 
+    color:#FFFFFF;
+    font-size: 20px;
+
+    /* Change the background color on hover */
+  }
+
+
+/* Responsive styles */
+
+@media only screen and (max-width: 991px) {
+    .contact-img {
+        height: auto;
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .contact-img .contact-us {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .contact {
+        margin: 0;
+        height: auto;
+        padding: 20px;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
+/* Additional responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+    .contact-img {
+        height:200px;
+        padding: 20px;
+        border-radius: 15px 15px 0 0;
+    }
+    .stay-head {
+        font-size: 24px;
+    }
+
+    .form-input label {
+        font-size: 12px;
+    }
+
+    .form-input .form-control {
+        font-size: 14px;
+    }
+}

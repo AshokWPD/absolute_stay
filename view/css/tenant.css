@@ -1,0 +1,145 @@
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.containerlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Tenant List */
+.tenant-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+}
+
+.tenant-list h2 {
+    margin: 0;
+}
+
+.tenant-item {
+    background-color: #215473;
+    color: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.tenant-info {
+    flex: 1;
+}
+
+.tenant-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.tenant-item p {
+    margin: 0;
+}
+
+.Edit-button {
+    background-color: #00ff44;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px; /* Adjusted button width */
+    align-self: self-end;
+}
+
+.Edit-button:hover {
+    background-color: #00ff44;
+}
+
+/* Tenant Creation Form */
+.tenant-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align:start;
+    color: #000;
+}
+
+.tenant-form h2 {
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.add-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-section {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #000; /* Footer background color changed to black */
+    color: #fff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerlists {
+        flex-direction: column;
+    }
+
+    .tenant-list,
+    .tenant-form {
+        flex:auto;
+        inline-size:auto;
+        size-adjust:inherit;
+        margin: 10px 0;
+        
+    }
+}

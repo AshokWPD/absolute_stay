@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute stay</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="view/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="view/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="view/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="view/css/datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="view/css/common.css">
+    <link rel="stylesheet" type="text/css" href="view/css/header.css">
+    <link rel="stylesheet" type="text/css" href="view/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="view/css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="view/css/index.css">
+    <link rel="stylesheet" type="text/css" href="view/css/notification.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="stay-nav navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand p-0" href="index.html">
+                    <img src="view/images/logo.jpeg" alt="logo" width="53px" height="62px" loading="lazy">
+                </a>
+                <button class="navbar-toggler nav-filter shadow-none">
+                    <img src="view/images/icons/filter.png" alt="filter" width="24px" height="24px" loading="lazy">
+                </button>
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#stay-content" aria-controls="stay-content" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="view/images/icons/hamburger.png" alt="hamburger" width="24px" height="24px" loading="lazy">
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="stay-content">
+                    <div class="container p-0 m-0">
+                        <button class="res-close navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#stay-content" aria-controls="stay-content" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <img src="view/images/icons/close.png" alt="close" width="24px" height="24px" loading="lazy">
+                        </button>
+
+                        <ul class="navbar-nav">
+                          <!--   <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#join-vendor"><span>Join as
+                                        vendor</span></a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="property-list.html"><span>List your Property</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html"><span>About Us</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-us.html"><span>Contact Us</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+91 9876543210" target="_blank"><img
+                                        src="view/images/icons/phone.png" alt="phone"><span>+91
+                                        9876543210</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mailto:absolute@gmail.com" target="_blank"><img
+                                        src="view/images/icons/mail.png" alt="mail"><span>absolute@gmail.com</span></a>
+                            </li>
+                            <button id="join-btn" type="button" class="stay-btn" data-bs-toggle="modal"
+                                data-bs-target="#login">Join</button>
+
+                            <div class="btn-group profile-drop" id="joined-btn">
+                                <div class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span><img src="view/images/profile.svg" alt="profile" loading="lazy"></span>
+                                </div>
+                                <ul class="dropdown-menu">
+                                    <li class="profile-name"></li>
+                                    <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                                    <li><a class="dropdown-item" href="https://absolutestaycorporatelivings.com/demo/site/my-property.html">My Property</a></li>
+                                    <li><a class="dropdown-item" href="index.html#">My Password</a></li>
+                                    <li><button onclick="getLogout()" class="dropdown-item">Logout</button></li>
+                                </ul>
+                            </div>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12">
+                    <div class="banner-info w-100">
+                        <h1 class="stay-head mb-4">Rent the smart way with <br><span>Absolute stay !</span></h1>
+                        <p class="stay-info">We help find, book rental homes of choice across Indian cities.</p>
+                        <form action="index.html" class="">
+                            <div class="search-stay web-search my-4">
+
+                                <div class="search-box d-flex align-items-start">
+                                    <img src="view/images/icons/location.png" alt="location">
+                                    <div class="search-drop position-relative">
+                                        <span>Location</span>
+                                        <input type="text" class="dropdown-search text-capitalize loc-toggle"
+                                            placeholder="Search">
+                                        <ul class="dropdown-menu" id="loc-drop">
+                                            <li>Chennai</li>
+                                            <li>Trichy</li>
+                                            <li>Coimbatore</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="search-box d-flex align-items-start">
+                                    <img src="view/images/icons/calendar.png" alt="calendar">
+                                    <div class="search-drop">
+                                        <span>Check in</span>
+                                        <input type="text" class="datepicker" id="checkin" placeholder="dd-mm-yyyy">
+                                    </div>
+                                </div>
+                                <div class="search-box d-flex align-items-start">
+                                    <img src="view/images/icons/calendar.png" alt="calendar">
+                                    <div class="search-drop">
+                                        <span>Check out</span>
+                                        <input type="text" class="datepicker" id="checkout" placeholder="dd-mm-yyyy">
+                                    </div>
+
+                                </div>
+                                <button class="stay-btn"><img src="view/images/icons/search.png" alt="search"></button>
+                                <button class="res-search-close">
+                                    <img src="view/images/icons/close.png" alt="close" width="18px" height="18px"
+                                        loading="lazy">
+                                </button>
+
+                            </div>
+                        </form>
+                        <div class="banner-counts d-flex flex-wrap align-items-center justify-content-start gap-4">
+                            <p class="text-count resident-count"><img src="view/images/icons/residence.png"
+                                    alt="residence"><span><b class="count" data-number="450"></b>+</span> Residence</p>
+                            <p class="text-count city-count"><img src="view/images/icons/cities.png" alt="cities"><span><b
+                                        class="count" data-number="24"></b>+</span>
+                                Cities</p>
+                            <p class="text-count customer-count"><img src="view/images/icons/customers.png"
+                                    alt="customers"><span><b class="count" data-number="240"></b>+</span>Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12">
+                    <div class="categories w-100 d-flex flex-wrap">
+                        <div class="category mb-2">
+                            <a href="index.html#" class="d-block w-100 h-100 position-relative">
+                                <img src="view/images/serviced-apartments.jpg" alt="Serviced Apartments"
+                                    class="position-absolute w-100 h-100">
+                                <p class="cat-head">Serviced Apartments</p>
+                            </a>
+                        </div>
+                        <div class="category mb-2">
+                            <a href="index.html#" class="d-block w-100 h-100 position-relative">
+                                <img src="view/images/pay-guest.jpg" alt="Pay guest" class="position-absolute w-100 h-100">
+                                <p class="cat-head">Pay guest</p>
+                            </a>
+                        </div>
+                        <div class="category mb-2">
+                            <a href="index.html#" class="d-block w-100 h-100 position-relative">
+                                <img src="view/images/commercial-space.jpg" alt="Commercial space"
+                                    class="position-absolute w-100 h-100">
+                                <p class="cat-head">Commercial space</p>
+                            </a>
+                        </div>
+                        <div class="category mb-2">
+                            <a href="index.html#" class="d-block w-100 h-100 position-relative">
+                                <img src="view/images/resort.jpg" alt="Resorts" class="position-absolute w-100 h-100">
+                                <p class="cat-head">Resorts</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="everyone-section">
+        <div class="container">
+            <h2 class="stay-head mb-4">For <span>everyone</span></h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="everyone">
+                        <img src="view/images/students.png" alt="Students" width="55px" height="54px" loading="lazy">
+                        <p class="every-head">Students</p>
+                        <p class="every-info m-0">We book all kind of national or international
+                            ticket for your destinaion.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                    <div class="everyone">
+                        <img src="view/images/professionals.png" alt="Working Professionals" width="54px" height="54px"
+                            loading="lazy">
+                        <p class="every-head">Working Professionals</p>
+                        <p class="every-info m-0">You can easily book your according to your
+                            budget hotel by our website.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mb-3">
+                    <div class="everyone">
+                        <img src="view/images/apartments.png" alt="Managed Apartments" width="54px" height="54px"
+                            loading="lazy">
+                        <p class="every-head">Managed Apartments</p>
+                        <p class="every-info m-0">We provide you the best plan within a short
+                            time explore more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="location-section">
+        <div class="container">
+            <h3 class="stay-head mb-4">Featured <span>Locations</span></h3>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="locations">
+                        <img src="view/images/location/chennai.png" alt="location" class="location">
+                        <p class="loc-head mb-2 w-100">Chennai</p>
+                        <p class="loc-info m-0 w-100">300+ properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="locations">
+                        <img src="view/images/location/hyderabad.png" alt="location" class="location">
+                        <p class="loc-head mb-2 w-100">Hyderabad</p>
+                        <p class="loc-info m-0 w-100">300+ properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="locations">
+                        <img src="view/images/location/mumbai.png" alt="location" class="location">
+                        <p class="loc-head mb-2 w-100">Mumbai</p>
+                        <p class="loc-info m-0 w-100">300+ properties</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
+                    <div class="locations">
+                        <img src="view/images/location/bangalore.png" alt="location" class="location">
+                        <p class="loc-head mb-2 w-100">Bangalore</p>
+                        <p class="loc-info m-0 w-100">300+ properties</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="testihead mb-4 d-flex justify-content-between align-items-center flex-wrap">
+                <h4 class="stay-head">Testimonials</h4>
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="customers-tab" data-bs-toggle="pill"
+                            data-bs-target="#customers" type="button" role="tab" aria-controls="customers"
+                            aria-selected="true">Customers</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="owners-tab" data-bs-toggle="pill" data-bs-target="#owners"
+                            type="button" role="tab" aria-controls="owners" aria-selected="false">Owners</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content testimonial-tab">
+                <div class="tab-pane fade show active" id="customers" role="tabpanel" aria-labelledby="customers-tab">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="owners" role="tabpanel" aria-labelledby="owners-tab">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div
+                                class="testimonial w-100 d-flex flex-column justify-content-center align-content-center">
+                                <p class="review w-100 text-center">I love this site so much so implly want to
+                                    imagine how just
+                                    beaut for
+                                    Everything is great ! Thanks for making this awesome so much.</p>
+                                <p class="star-rating w-100 d-flex align-items-center justify-content-center gap-2">
+                                    <img src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star.png"
+                                        alt="star"><img src="view/images/icons/star.png" alt="star"><img
+                                        src="view/images/icons/star.png" alt="star"><img src="view/images/icons/star-outline.png"
+                                        alt="star">
+                                </p>
+                                <div class="review-by w-100 d-flex justify-content-center gap-3">
+                                    <span>
+                                        <img src="view/images/emily.png" alt="review" width="55px" height="55px"
+                                            loading="lazy">
+                                    </span>
+                                    <p class="m-0">
+                                        <strong class="d-block">Emily</strong>
+                                        Student
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+<footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="foot w-100">
+
+                        <ul class="foot-social p-0 w-100 d-flex gap-4">
+                            <li><a href="index.html#" target="_blank"><img src="view/images/icons/facebook.png" alt="facebook"
+                                        loading="lazy"></a></li>
+                            <li><a href="index.html#" target="_blank"><img src="view/images/icons/twitter.png" alt="twitter"
+                                        loading="lazy"></a></li>
+                            <li><a href="index.html#" target="_blank"><img src="view/images/icons/instagram.png" alt="instagram"
+                                        loading="lazy"></a></li>
+                        </ul>
+                        <p class="foot-copy">Copyright © 2020.Absolute Stays. All rights reserved.</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 col-sm-12">
+                    <div class="foot w-100">
+                        <ul class="foot-links w-100 p-0 d-flex justify-content-end gap-4 flex-wrap">
+                            <!-- <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#join-vendor">Join
+                                    as vendor</a></li> -->
+                            <li><a href="https://absolutestaycorporatelivings.com/demo/site/list-property">List your Property</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                        <ul class="foot-links w-100 m-0 p-0 d-flex justify-content-end gap-4 flex-wrap">
+                            <li><a href="index.html#">Terms & Conditions</a></li>
+                            <li><a href="index.html#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+     <div class="modal fade vendor-modal" id="join-user" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto mt-3 me-3 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <h6 class="stay-head text-center">Join as User</h6>
+                    <p class="stay-info text-center">Experience luxury and comfort at our hotel rooms, where your relaxation is our priority.</p>
+
+                    <form class="row" method="post" name="user-form" id="user-form" action="https://absolutestaycorporatelivings.com/demo/site/save-uregister">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-name">Property name</label>
+                            <input type="text" class="form-control required" id="property-name"
+                                placeholder="Enter your property name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-type">Property type</label>
+                            <select class="form-select" id="property-type">
+                                <option hidden>Select your property type</option>
+                                <option value="1">Pg</option>
+                                <option value="2">Residential</option>
+                                <option value="3">Commercial</option>
+                            </select>
+                        </div> -->
+                        <input type="hidden" class="form-control required" name="user_type" id="user_type" value="user" 
+                                placeholder="Enter your owner name">
+
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-name">User name</label>
+                            <input type="text" class="form-control required" name="name" id="name"
+                                placeholder="Enter your owner name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-email">User email</label>
+                            <input type="email" class="form-control required" name="email" id="email"
+                                placeholder="Enter your owner email">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="ph-number">Phone number</label>
+                            <input type="tel" class="form-control required" id="mobile" name="mobile"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control required" name="address" id="address"
+                                placeholder="Enter your address">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control required" name="password" id="password"
+                                placeholder="Enter your password">
+                            <button class="pass-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="re-password">Re - Enter Password</label>
+                            <input type="password" class="form-control required" name="cpassword" id="cpassword"
+                                placeholder="Re-enter your password">
+                            <button class="confirm-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 mt-4 form-input">
+                            <button  type="submit" class="btn stay-btn" data-bs-dismiss="" data-bs-toggle=""
+                                data-bs-target="">Register</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade vendor-modal" id="join-sub-vendor" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto mt-3 me-3 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <h6 class="stay-head text-center">Join as sub vendor</h6>
+                    <p class="stay-info text-center">Experience luxury and comfort at our hotel rooms, where your
+                        relaxation is our priority.</p>
+
+                    <form class="row" method="post" name="vendor-form" id="vendor-form" action="https://absolutestaycorporatelivings.com/demo/site/save-vregister">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-name">Property name</label>
+                            <input type="text" class="form-control required" id="property-name"
+                                placeholder="Enter your property name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-type">Property type</label>
+                            <select class="form-select" id="property-type">
+                                <option hidden>Select your property type</option>
+                                <option value="1">Pg</option>
+                                <option value="2">Residential</option>
+                                <option value="3">Commercial</option>
+                            </select>
+                        </div> -->
+                        <input type="hidden" class="form-control required" name="user_type" id="user_type" value="vendor" 
+                                placeholder="Enter your owner name">
+
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-name">Owner name</label>
+                            <input type="text" class="form-control required" name="name" id="name"
+                                placeholder="Enter your owner name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-email">Owner email</label>
+                            <input type="email" class="form-control required" name="email" id="email"
+                                placeholder="Enter your owner email">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="ph-number">Phone number</label>
+                            <input type="tel" class="form-control required" id="mobile" name="mobile"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control required" name="address" id="address"
+                                placeholder="Enter your address">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control required" name="password" id="password"
+                                placeholder="Enter your password">
+                            <button class="pass-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="re-password">Re - Enter Password</label>
+                            <input type="password" class="form-control required" name="cpassword" id="cpassword"
+                                placeholder="Re-enter your password">
+                            <button class="confirm-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 mt-4 form-input">
+                            <a href="profile.html" class="btn stay-btn">Register</a>
+                        </div>
+                        
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade vendor-modal" id="join-vendor" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto mt-3 me-3 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <h6 class="stay-head text-center">Join as vendor</h6>
+                    <p class="stay-info text-center">Experience luxury and comfort at our hotel rooms, where your
+                        relaxation is our priority.</p>
+
+                    <form class="row" method="post" name="vendor-form" id="vendor-form" action="https://absolutestaycorporatelivings.com/demo/site/save-vregister">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-name">Property name</label>
+                            <input type="text" class="form-control required" id="property-name"
+                                placeholder="Enter your property name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="property-type">Property type</label>
+                            <select class="form-select" id="property-type">
+                                <option hidden>Select your property type</option>
+                                <option value="1">Pg</option>
+                                <option value="2">Residential</option>
+                                <option value="3">Commercial</option>
+                            </select>
+                        </div> -->
+                        <input type="hidden" class="form-control required" name="user_type" id="user_type" value="vendor" 
+                                placeholder="Enter your owner name">
+
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-name">Owner name</label>
+                            <input type="text" class="form-control required" name="name" id="name"
+                                placeholder="Enter your owner name">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="owner-email">Owner email</label>
+                            <input type="email" class="form-control required" name="email" id="email"
+                                placeholder="Enter your owner email">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="ph-number">Phone number</label>
+                            <input type="tel" class="form-control required" id="mobile" name="mobile"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control required" name="address" id="address"
+                                placeholder="Enter your address">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control required" name="password" id="password"
+                                placeholder="Enter your password">
+                            <button class="pass-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3 form-input position-relative">
+                            <label for="re-password">Re - Enter Password</label>
+                            <input type="password" class="form-control required" name="cpassword" id="cpassword"
+                                placeholder="Re-enter your password">
+                            <button class="confirm-btn">
+                                <img src="view/images/icons/view.png" alt="password-show">
+                                <img src="view/images/icons/hide.png" alt="password-hide" style="display: none;">
+                            </button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 mt-4 form-input">
+                            <button  type="submit" class="btn stay-btn" data-bs-dismiss="" data-bs-toggle=""
+                                data-bs-target="">Register</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade vendor-modal otp-modal" id="otp-vendor" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto mt-3 me-3 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <h6 class="stay-head text-center">OTP verification</h6>
+                    <p class="stay-info text-center">Enter the OTP received at <span class="d-block">+9123*****56</span>
+                    </p>
+
+                    <form class="row" id="otp-verify" action="index.html">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 form-input">
+                            <div class="otp-input">
+                                <input type="text" class="form-control" maxlength="1" />
+                                <input type="text" class="form-control" maxlength="1" />
+                                <input type="text" class="form-control" maxlength="1" />
+                                <input type="text" class="form-control" maxlength="1" />
+                            </div>
+
+                            <button class="resend-otp">Resend OTP</button>
+                        </div>
+
+
+                        <div class="col-lg-12 col-md-12 col-sm-12 mb-3 mt-4 form-input">
+                            <button type="button" class="btn stay-btn" data-bs-dismiss="modal">Verify OTP</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade vendor-modal login-modal" id="login" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close ms-auto mt-3 me-3 shadow-none" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+
+                <div class="modal-body">
+
+                    <h6 class="stay-head text-center">Join</h6>
+                    <p class="stay-info text-center">If you are not logged in and click on the owner or user</p>
+
+                    <div class="row justify-content-center mb-5">
+
+                        <div class="col-lg-3 col-md-3 col-sm-4 mb-3">
+                            <div class="login-box d-flex align-items-center flex-column gap-2 position-relative">
+                                <input onclick="getUserLogin()" type="radio" name="join" class="position-absolute opacity-0 w-100 h-100 top-0">
+                                <img src="view/images/user.png" width="50px" height="50px" alt="user" loading="lazy">
+                                <span>Join as User</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 mb-3">
+                            <div class="login-box d-flex align-items-center flex-column gap-2 position-relative">
+                                <input onclick="getOwnerLogin()" type="radio" name="join" class="position-absolute opacity-0 w-100 h-100 top-0">
+                                <img src="view/images/owner.png" width="50px" height="50px" alt="user" loading="lazy">
+                                <span>Join as Owner</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4 mb-3">
+                            <div class="login-box d-flex align-items-center flex-column gap-2 position-relative">
+                                <input onclick="getVendorLogin()" type="radio" name="join" class="position-absolute opacity-0 w-100 h-100 top-0">
+                                <img src="view/images/vendor.png" width="50px" height="50px" alt="user" loading="lazy">
+                                <span>Join as Vendor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-center"><a href="javascript:getLogin()" >Already have login ? Click here To Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    .error{
+       color: red;     
+    }
+</style>
+
+
+    <script type="text/javascript" src="view/js/jquery.min.js"></script>
+    <script type="text/javascript" src="view/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="view/js/datepicker.js"></script>
+    <script type="text/javascript" src="view/js/owl.carousel.js"></script>
+    <script type="text/javascript" src="view/js/script.js"></script>
+    <script type="text/javascript"  src="view/js/jquery.validate.min.js"></script>
+    <script type="text/javascript"  src="view/js/notification.js"></script>
+    <script>
+
+        var id = '';
+
+        if(id!=''){
+            $('#join-btn').hide();
+            $('#joined-btn').show();
+        }else{
+            $('#join-btn').show();
+            $('#joined-btn').hide();
+        }
+    
+        function getUserLogin(){
+            $('#login').modal('hide');    
+            $('#join-user').modal('show');     
+        }
+
+        function getOwnerLogin(){
+            $('#login').modal('hide');
+            $('#join-vendor').modal('show');     
+        }
+
+        function getVendorLogin(){
+            $('#login').modal('hide');
+            $('#join-sub-vendor').modal('show');     
+        }
+
+        function getLogout() {
+            window.location.replace("https://absolutestaycorporatelivings.com/demo/site/logout");
+        }
+
+            $("form[name='vendor-form']").validate({
+              // Specify validation rules
+              rules: {          
+                  name: "required",
+                  mobile: "required",
+                  email: {
+                    required: true,
+                    email: true
+                  },
+                  password: {
+                    required: true,
+                    //minlength: 5
+                  },
+                  cpassword: {
+                    required: true,
+                    equalTo : "#password",
+                    //minlength: 5
+                  }
+              },
+              messages: {
+                  name: "Please Enter Your Name",
+                  mobile: "Please Enter Your Mobile No",
+                  password: {
+                    required: "Please Enter Password",
+                    //minlength: "Your password must be at least 5 characters long"
+                  },
+                  cpassword: {
+                    required: "Please Enter Confirm Password",            
+                    //minlength: "Your password must be at least 5 characters long"
+                  },
+                  email: {
+                    required: "Please Enter a Email ID",
+                    email: "Please Enter a Valid Email Address"
+                  }
+              },
+              submitHandler: function(form) {
+                  form.submit();
+              }
+            });
+
+            $("form[name='user-form']").validate({
+              // Specify validation rules
+              rules: {          
+                  name: "required",
+                  mobile: "required",
+                  email: {
+                    required: true,
+                    email: true
+                  },
+                  password: {
+                    required: true,
+                    //minlength: 5
+                  },
+                  cpassword: {
+                    required: true,
+                    equalTo : "#password",
+                    //minlength: 5
+                  }
+              },
+              messages: {
+                  name: "Please Enter Your Name",
+                  mobile: "Please Enter Your Mobile No",
+                  password: {
+                    required: "Please Enter Password",
+                    //minlength: "Your password must be at least 5 characters long"
+                  },
+                  cpassword: {
+                    required: "Please Enter Confirm Password",            
+                    //minlength: "Your password must be at least 5 characters long"
+                  },
+                  email: {
+                    required: "Please Enter a Email ID",
+                    email: "Please Enter a Valid Email Address"
+                  }
+              },
+              submitHandler: function(form) {
+                  form.submit();
+              }
+            });
+        
+
+        $(document).ready(function () {
+
+            $(".banner-cards .owl-carousel").owlCarousel({
+                margin: 10,
+                loop: true,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    460: {
+                        items: 1,
+                    },
+                    1000: {
+                        items: 1,
+                    },
+                },
+            });
+            $(".testimonial-tab .owl-carousel").owlCarousel({
+                margin: 25,
+                loop: true,
+                nav: true,
+                navText: ["<img src='https://absolutestaycorporatelivings.com/demo/site/images/icons/arrow-right.png'>", "<img src='https://absolutestaycorporatelivings.com/demo/site/images/icons/arrow-right.png'>"],
+                dots: true,
+                autoplay: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    767: {
+                        items: 2,
+                        nav: false,
+                    },
+                    1000: {
+                        items: 3,
+                    },
+                },
+            });
+
+
+            var a = 0;
+            $(window).on('load', function () {
+                if (a == 0) {
+                    $(".count").each(function () {
+                        var $this = $(this),
+                            countTo = $this.attr("data-number");
+                        $({
+                            countNum: $this.text()
+                        }).animate({
+                            countNum: countTo
+                        },
+
+                            {
+                                duration: 7000,
+                                easing: "swing",
+                                step: function () {
+                                    $this.text(
+                                        Math.ceil(this.countNum).toLocaleString("en")
+                                    );
+                                },
+                                complete: function () {
+                                    $this.text(
+                                        Math.ceil(this.countNum).toLocaleString("en")
+                                    );
+                                }
+                            }
+                        );
+                    });
+                }
+            });
+
+            $('#checkin,#checkout').datepicker({
+                format: 'dd-mm-yyyy'
+            });
+            $('.select-date').click(function () {
+                $('.datepicker-dropdown').css({
+                    display: 'none'
+                });
+            });
+            $(".nav-filter").click(function () {
+                $(".web-search").fadeToggle();
+
+            });
+            $('.res-search-close').click(function () {
+                $(".web-search").fadeToggle();
+                $("body").removeClass('back-drop');
+            });
+        });
+
+    </script>
+</body>
+
+</html>
+
+    
+<script type="text/javascript">
+    callFunc();
+    function callFunc(){
+        var val='';
+        if(val!=""){
+            //toastr.success(val);
+            jSuites.notification({
+                name: '',
+                message: val,
+            })
+        }
+    }
+</script>

@@ -1,0 +1,192 @@
+/* Global styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.containerlists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.plan-list {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #000;
+}
+
+.plan-list h2 {
+    margin: 0;
+}
+
+/* Add styles for the Edit button */
+/* Add styles for the Edit and Delete buttons */
+.Edit-button{
+    background-color: #00ff44;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 70px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.Delete-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.Edit-button:hover,
+.Delete-button:hover {
+    background-color: #215473;
+}
+
+/* Style the button-container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the plan-item */
+.plan-item {
+    background-color: #ffffff;
+    color: #000000;
+    border: 5px solid #215473;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* Change to column for vertical layout */
+}
+
+/* Update the button text size */
+.Edit-button,
+.Delete-button {
+    font-size: 1em;
+}
+
+
+/* Update the plan-item border color on hover */
+.plan-item:hover {
+    border-color: #000000; /* Change the border color on hover */
+}
+
+
+.plan-info {
+    flex: 1;
+}
+
+.plan-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.plan-item p {
+    margin: 0;
+}
+
+.Edit-button {
+    background-color: #00ff44;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80px; /* Adjusted button width */
+    align-self: self-end;
+}
+
+
+
+/* Tenant Creation Form */
+.plan-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align:start;
+    color: #000;
+}
+
+.plan-form h2 {
+    margin: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="Price"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.add-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-section {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #000; /* Footer background color changed to black */
+    color: #fff;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .containerlists {
+        flex-direction: column;
+    }
+
+    .tenant-list,
+    .tenant-form {
+        flex:auto;
+        inline-size:auto;
+        size-adjust:inherit;
+        margin: 10px 0;
+        
+    }
+}
